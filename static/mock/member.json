@@ -1,0 +1,30 @@
+{
+  "code": 0,
+  "data":
+  {
+    "memberName": "许",
+    "memberId": "13544488888",
+    "memberCredits": 999,
+    "memberType": "粉丝会员",
+    "memberPhone": "13544488888",
+    "memberSum": 523,
+    "memberDiscount": 1,
+    "memberCoupon": {
+      "couponCount": 2,
+      "couponList" : [
+        {
+          "couponName": "鲜果茶买一送一券",
+          "couponCode": "523121321421321",
+          "couponItemId": "15312",
+          "couponDes": "鲜果茶买一送一券"
+        },
+        {
+          "couponName": "gaga沙拉免单券",
+          "couponCode": "52346156521321",
+          "couponItemId": "15351",
+          "couponDes": "gaga沙拉免单券"
+        }
+      ]
+    }
+  }
+}

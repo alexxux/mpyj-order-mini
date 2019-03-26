@@ -1,0 +1,53 @@
+$theme:#00a982;
+html,
+body {
+  font-family: tahoma, arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  //  文字不可选
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  font-size: 20px !important;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (min-width:320px) {
+  html {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (min-width:480px) {
+  html {
+    font-size: 20px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color:#7FFFAA;
+}

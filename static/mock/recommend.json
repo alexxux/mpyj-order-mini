@@ -1,0 +1,54 @@
+{
+  "code": 0,
+  "data": [
+  {
+    "itemid": "2010",
+    "name": "焗鸡扒饭",
+    "price": 58,
+    "currency": "元",
+    "unit": "份",
+    "oldPrice": "",
+    "description": "焗鸡扒饭",
+    "info": "gaga特色沙拉",
+    "icon": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+    "image": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+    "hot": 1
+  },
+  {
+    "itemid": "2018",
+    "name": "焗鸡扒饭",
+    "price": 58,
+    "currency": "元",
+    "unit": "份",
+    "oldPrice": "",
+    "description": "焗鸡扒饭",
+    "info": "gaga特色沙拉",
+    "icon": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+    "image": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+  },
+  {
+    "itemid": "3010",
+    "name": "gaga特色沙拉",
+    "price": 38,
+    "currency": "元",
+    "unit": "份",
+    "oldPrice": "",
+    "description": "gaga特色沙拉",
+    "info": "gaga特色沙拉",
+    "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+    "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+    "hot": 1
+  },
+  {
+    "itemid": "5010",
+    "name": "gaga意大利粉",
+    "price": 38,
+    "currency": "元",
+    "unit": "份",
+    "oldPrice": "",
+    "description": "gaga特色沙拉",
+    "info": "gaga特色沙拉",
+    "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+    "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+  }]
+}

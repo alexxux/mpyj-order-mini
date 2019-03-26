@@ -1,0 +1,41 @@
+@keyframes navItemFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navItemFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes cubeRotate {
+  from {
+    transform: rotateX(-5deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(-5deg) rotateY(-360deg);
+  }
+}
+
+@keyframes scaleing {
+  0% {
+    transform: scale(1,1);
+  }
+  50% {
+    transform: scale(0.9,0.9);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}

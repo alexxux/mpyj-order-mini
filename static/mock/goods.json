@@ -1,0 +1,326 @@
+{
+  "code": 0,
+  "data": [
+  {
+    "name": "早午餐",
+    "type": 1,
+    "foods": [
+    {
+      "itemid": "2010",
+      "name": "韭菜猪肉饺子+例汤",
+      "price": 19,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "汤一份 饺子一份",
+      "info": "汤一份 饺子一份",
+      "method": [
+      {
+        "name": "加辣",
+        "exprice": 2
+      }],
+      "type": [
+      {
+        "title": "规格",
+        "data": [
+        {
+          "name": "小份(12个)",
+          "exprice": 0
+        },
+        {
+          "name": "大份(18个)",
+          "exprice": 6
+        }]
+      },{
+        "title": "热",
+        "data": [
+        {
+          "name": "鲜美",
+          "exprice": 0
+        }]
+      }],
+      "icon": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "2010",
+      "name": "韭菜猪肉饺子+例汤",
+      "price": 19,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "汤一份 饺子一份",
+      "info": "汤一份 饺子一份",
+      "method": [
+      {
+        "name": "加辣",
+        "exprice": 2
+      }],
+      "type": [
+      {
+        "title": "规格",
+        "data": [
+        {
+          "name": "小份(12个)",
+          "exprice": 0
+        },
+        {
+          "name": "大份(18个)",
+          "exprice": 6
+        }]
+      },{
+        "title": "热",
+        "data": [
+        {
+          "name": "鲜美",
+          "exprice": 0
+        }]
+      }],
+      "icon": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "2010",
+      "name": "韭菜猪肉饺子+例汤",
+      "price": 19,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "汤一份 饺子一份",
+      "info": "汤一份 饺子一份",
+      "method": [
+      {
+        "name": "加辣",
+        "exprice": 2
+      }],
+      "type": [
+      {
+        "title": "规格",
+        "data": [
+        {
+          "name": "小份(12个)",
+          "exprice": 0
+        },
+        {
+          "name": "大份(18个)",
+          "exprice": 6
+        }]
+      },{
+        "title": "热",
+        "data": [
+        {
+          "name": "鲜美",
+          "exprice": 0
+        }]
+      }],
+      "icon": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "2010",
+      "name": "韭菜猪肉饺子+例汤",
+      "price": 19,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "汤一份 饺子一份",
+      "info": "汤一份 饺子一份",
+      "method": [
+      {
+        "name": "加辣",
+        "exprice": 2
+      }],
+      "type": [
+      {
+        "title": "规格",
+        "data": [
+        {
+          "name": "小份(12个)",
+          "exprice": 0
+        },
+        {
+          "name": "大份(18个)",
+          "exprice": 6
+        }]
+      },{
+        "title": "热",
+        "data": [
+        {
+          "name": "鲜美",
+          "exprice": 0
+        }]
+      }],
+      "icon": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p1.meituan.net/bbia/91eb23de5e341b4e3073166708a00d51625742.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    }
+    ]
+  },
+  {
+    "name": "沙拉",
+    "type": 2,
+    "icon": "http://www.alexxu.top:88/images/icon01.png",
+    "foods": [
+    {
+      "itemid": "3010",
+      "name": "gaga特色沙拉",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "3010",
+      "name": "gaga特色沙拉",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "3010",
+      "name": "gaga特色沙拉",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "3010",
+      "name": "gaga特色沙拉",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "3010",
+      "name": "gaga特色沙拉",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    },
+    {
+      "itemid": "3010",
+      "name": "gaga特色沙拉",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    }]
+  },
+  {
+    "name": "三文治",
+    "type": 2,
+    "icon": "http://www.alexxu.top:88/images/icon01.png",
+    "foods": [
+    {
+      "itemid": "4010",
+      "name": "gaga三文治",
+      "price": 48,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    }]
+  },
+  {
+    "name": "意粉",
+    "type": 2,
+    "icon": "http://www.alexxu.top:88/images/icon01.png",
+    "foods": [
+    {
+      "itemid": "5010",
+      "name": "gaga意大利粉",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    }]
+  },
+  {
+    "name": "披萨",
+    "type": 2,
+    "icon": "http://www.alexxu.top:88/images/icon01.png",
+    "foods": [
+    {
+      "itemid": "6010",
+      "name": "gaga披萨",
+      "price": 38,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    }]
+  },
+  {
+    "name": "小吃及精选",
+    "type": 2,
+    "icon": "http://www.alexxu.top:88/images/icon01.png",
+    "foods": [
+    {
+      "itemid": "6010",
+      "name": "gaga小吃",
+      "price": 18,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    }]
+  },
+  {
+    "name": "gaga鲜果茶",
+    "type": 2,
+    "icon": "http://www.alexxu.top:88/images/icon01.png",
+    "foods": [
+    {
+      "itemid": "7010",
+      "name": "gaga鲜果茶",
+      "price": 28,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "gaga特色沙拉",
+      "info": "gaga特色沙拉",
+      "icon": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20",
+      "image": "http://p0.meituan.net/bbia/91cc6ac3e8f3df68aa96eafa81a6f5b1635763.jpg%40249w_249h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20"
+    }]
+  }]
+}

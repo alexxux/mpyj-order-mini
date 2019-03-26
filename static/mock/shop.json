@@ -1,0 +1,156 @@
+{
+  "code": 0,
+  "data": [
+  {
+    "name": "热销商品",
+    "classid": 10,
+    "foods": [
+    {
+      "itemid": "1010",
+      "name": "韭菜猪肉饺子",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/18只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    },
+    {
+      "itemid": "1011",
+      "name": "黑米紫薯包",
+      "price": 11,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(300克/6只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-02.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-02.png"
+    },
+    {
+      "itemid": "1012",
+      "name": "海虾大云吞",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/15只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    }]
+  },
+  {
+    "name": "包点类",
+    "classid": 20,
+    "foods": [
+    {
+      "itemid": "1010",
+      "name": "韭菜猪肉饺子2",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/18只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-02.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-02.png"
+    },
+    {
+      "itemid": "1011",
+      "name": "黑米紫薯包",
+      "price": 11,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(300克/6只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    },
+    {
+      "itemid": "1012",
+      "name": "海虾大云吞",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/15只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-02.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-02.png"
+    }]
+  },
+  {
+    "name": "饺子类",
+    "classid": 30,
+    "foods": [
+    {
+      "itemid": "1010",
+      "name": "韭菜猪肉饺子",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/18只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    },
+    {
+      "itemid": "1011",
+      "name": "黑米紫薯包",
+      "price": 11,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(300克/6只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-02.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-02.png"
+    },
+    {
+      "itemid": "1012",
+      "name": "海虾大云吞",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/15只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    }]
+  },
+  {
+    "name": "云吞类",
+    "classid": 20,
+    "foods": [
+    {
+      "itemid": "1010",
+      "name": "韭菜猪肉饺子2",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/18只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    },
+    {
+      "itemid": "1011",
+      "name": "黑米紫薯包",
+      "price": 11,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(300克/6只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    },
+    {
+      "itemid": "1012",
+      "name": "海虾大云吞",
+      "price": 23.8,
+      "currency": "元",
+      "unit": "份",
+      "oldPrice": "",
+      "description": "(378克/15只)",
+      "icon": "http://www.alexxu.top:88/images/shop/shop-item-01.png",
+      "image": "http://www.alexxu.top:88/images/shop/shop-item-01.png"
+    }]
+  }]
+}
