@@ -40,19 +40,20 @@ export default {
 </script>
 <style lang="scss">
 .cartcontrol {
-  margin-top: 10px;
   display:flex;
   justify-content:space-around;
   align-items:center;
+  color: #3d5d98;
+  height: 20px;
   .cart-decrease {
-    font-size: 24px;
+    font-size: 15px;
   }
   .cart-count {
-    font-size: 18px;
-    margin: 0 5px;
+    font-size: 15px;
+    margin: 0 10px;
   }
   .cart-add {
-    font-size: 24px;
+    font-size: 15px;
 
   }
 }

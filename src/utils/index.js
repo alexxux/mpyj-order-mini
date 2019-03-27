@@ -1,9 +1,9 @@
-function formatNumber (n) {
+function formatNumber(n) {
   const str = n.toString()
   return str[1] ? str : `0${str}`
 }
 
-export function formatTime (date) {
+export function formatTime(date) {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
@@ -18,7 +18,18 @@ export function formatTime (date) {
   return `${t1} ${t2}`
 }
 
+export function formatPrice(n) {
+  let num = n.toString()
+  let pointIndex = num.indexOf('.')
+  if (num.length - pointIndex === 2) {
+    return num + '0'
+  } else {
+    return num
+  }
+}
+
 export default {
   formatNumber,
-  formatTime
+  formatTime,
+  formatPrice
 }
