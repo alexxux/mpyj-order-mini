@@ -1,29 +1,35 @@
 <template>
   <div class="shop-menu">
     <scroll-view
-     scroll-y
-     class="menu-class"
+      scroll-y
+      class="menu-class"
     >
-      <ul>
+      <!-- 侧边栏 -->
+      <ul class="menu-class-box">
         <li
-         v-for="(c,index) in menuData"
-         :key="index"
-         @click="selectClass(index)"
-         class="class-item"
+          v-for="(c,index) in menuData"
+          :key="index"
+          @click="selectClass(index)"
+          :class="{'class-selected': index === selectMenu}"
+          class="class-item"
         >
+          <div>
+            <i class="svgIcon" :class="{'shop-class-hot': c.name==='热销商品', 'shop-class-dumpling': c.name==='饺子类' || c.name==='云吞类' || c.name==='包点类'}"></i>
+          </div>
           <div>{{c.name}}</div>
         </li>
       </ul>
     </scroll-view>
+    <!-- 菜单界面 -->
     <scroll-view
-     scroll-y
-     class="menu-list"
+      scroll-y
+      class="menu-list"
     >
       <ul class="menu-list-box">
         <li
-         v-for="(item, index) in menuData[selectMenu].foods"
-         :key="index"
-         class="menu-item"
+          v-for="(item, index) in menuData[selectMenu].foods"
+          :key="index"
+          class="menu-item"
         >
           <div class="item-icon-box">
             <img :src="item.icon" class="item-icon">
@@ -50,10 +56,11 @@ export default {
   },
   data() {
     return {
-      selectMenu: 0
+      selectMenu: 0,
+      classIcon: {
+
+      }
     }
-  },
-  computed: {
   },
   components: {
     cartcontrol
@@ -61,15 +68,20 @@ export default {
   methods: {
     selectClass(index) {
       this.selectMenu = index
+    },
+    iconSvg(name) {
+      return 'shop-class-hot'
     }
   }
 }
 
 </script>
 <style
- lang="scss"
- scoped
+  lang="scss"
+  scoped
 >
+@import '~common/style/svg.scss';
+
 .shop-menu {
   .menu-class {
     position: absolute;
@@ -92,10 +104,19 @@ export default {
 
 
 .menu-class {
-  .class-item {
-    width: 140rpx;
-    height: 140rpx;
-    font-size: 30rpx;
+  .menu-class-box {
+    .class-item {
+      width: 140rpx;
+      height: 140rpx;
+      font-size: 30rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .class-selected {
+      background: #ffffff;
+    }
   }
 }
 
@@ -135,13 +156,14 @@ export default {
 
           .name {
             font-weight: 700;
-            font-size: 13px;
+            font-size: 28rpx;
           }
 
           .description {
             font-size: 10px;
           }
         }
+
         .price-box {
           font-size: 20px;
 

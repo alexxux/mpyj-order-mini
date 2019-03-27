@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/home/main",
     "pages/shop/main",
+    "pages/home/main",
     "pages/user/main",
     "pages/index/main",
     "pages/logs/main",
@@ -27,12 +27,6 @@
       "pagePath": "pages/home/main",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
-    },
-    {
-      "text": "商城",
-      "pagePath": "pages/shop/main",
-      "iconPath": "static/tabs/shop.png",
-      "selectedIconPath": "static/tabs/shop-active.png"
     },
     {
       "text": "个人中心",

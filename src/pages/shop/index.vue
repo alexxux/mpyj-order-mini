@@ -37,6 +37,14 @@ export default {
  lang="scss"
  scoped
 >
+.home-page {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
 .swiper-box {
   width: 100%;
   height: 300rpx;
