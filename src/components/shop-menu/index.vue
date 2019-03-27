@@ -73,7 +73,6 @@ export default {
           }
         })
       })
-      console.log(foods)
       return foods
     }
   },
@@ -168,6 +167,7 @@ export default {
 
 .menu-list {
   .menu-list-box {
+    padding-bottom:10px;
     .menu-item {
       box-sizing: border-box;
       width: 560rpx;
@@ -179,6 +179,7 @@ export default {
       align-items: center;
       box-shadow: 0 0 5px 5px rgba(220, 220, 220, 0.5);
       border-radius: 3px;
+      position: relative;
 
       .item-icon-box {
         width: 300rpx;
@@ -189,9 +190,7 @@ export default {
           max-height: 100%;
         }
       }
-
       .item-content {
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
