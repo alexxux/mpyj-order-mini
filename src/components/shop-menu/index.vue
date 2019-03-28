@@ -1,17 +1,17 @@
 <template>
   <div class="shop-menu">
     <scroll-view
-      scroll-y
-      class="menu-class"
+     scroll-y
+     class="menu-class"
     >
       <!-- 侧边栏 -->
       <ul class="menu-class-box">
         <li
-          v-for="(c,index) in menuData"
-          :key="index"
-          @click="selectClass(index)"
-          :class="{'class-selected': index === selectMenu}"
-          class="class-item"
+         v-for="(c,index) in menuData"
+         :key="index"
+         @click="selectClass(index)"
+         :class="{'class-selected': index === selectMenu}"
+         class="class-item"
         >
           <div class="icon-box">
             <i class="svg-icon" :class="{'shop-class-hot': c.name==='热销商品', 'shop-class-dumpling': c.name==='饺子类' || c.name==='云吞类' || c.name==='包点类'}"></i>
@@ -23,14 +23,14 @@
     </scroll-view>
     <!-- 菜单界面 -->
     <scroll-view
-      scroll-y
-      class="menu-list"
+     scroll-y
+     class="menu-list"
     >
       <ul class="menu-list-box">
         <li
-          v-for="(item, index) in menuData[selectMenu].foods"
-          :key="index"
-          class="menu-item"
+         v-for="(item, index) in menuData[selectMenu].foods"
+         :key="index"
+         class="menu-item"
         >
           <div class="item-icon-box">
             <img :src="item.icon" class="item-icon">
@@ -50,9 +50,9 @@
       </ul>
     </scroll-view>
     <shop-cart
-      :cartData="cartFoods"
-      @clearcart="handleClearCart"
-      @sumbitcart="handleSumbitCart"
+     :cartData="cartFoods"
+     @clearcart="handleClearCart"
+     @sumbitcart="handleSumbitCart"
     ></shop-cart>
   </div>
 </template>
@@ -93,9 +93,6 @@ export default {
     selectClass(index) {
       this.selectMenu = index
     },
-    iconSvg(name) {
-      return 'shop-class-hot'
-    },
     handleClearCart() {
       this.menuData.forEach((list) => {
         list.foods.forEach((item) => {
@@ -106,16 +103,24 @@ export default {
       })
     },
     handleSumbitCart() {
-      const url = '../orderbill/main'
-      mpvue.navigateTo({ url })
+      if (this.cartFoods.length < 1) {
+        wx.showToast({
+          title: '请选择菜品',
+          icon: 'none',
+          duration: 2000
+        })
+      } else {
+        const url = '../orderbill/main'
+        mpvue.navigateTo({ url })
+      }
     }
   }
 }
 
 </script>
 <style
-  lang="scss"
-  scoped
+ lang="scss"
+ scoped
 >
 @import '~common/style/svg.scss';
 

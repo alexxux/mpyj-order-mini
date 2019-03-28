@@ -69,16 +69,24 @@
       </div>
       <!-- 已选商品 -->
       <div class="cart-foods item-box">
-        <div class="box-title">已选商品：共[1]份</div>
+        <div class="box-title">已选商品：共{{ cartCount }}份</div>
         <ul class="foods-box">
-          <li class="foods-item">
-            <div>
-              <span>韭菜猪肉饺子 x 1</span>
+          <li
+           class="foods-item"
+           v-for="(food, index) in cartFoods"
+           :key="index"
+          >
+            <div class="foods-content">
+              <img :src="food.icon" class="icon">
+              <span class="text">{{food.name}} x {{ food.count }}</span>
             </div>
-            <span>￥18</span>
+            <span>￥{{ food.price * food.count}}</span>
           </li>
         </ul>
-        <div class="back-menu">
+        <div
+         class="back-menu"
+         @click="handleMenuBack"
+        >
           <i class="iconfont icon-jiantou"></i>返回菜单</div>
       </div>
       <!--支付方式-->
@@ -126,32 +134,32 @@
         <div class="sum-info">
           <div class="sum-item">
             <span>菜品小计</span>
-            <span>￥{{subdata.sumbill}}</span>
+            <span>￥{{sumbill}}</span>
           </div>
           <div class="sum-item">
             <span>优惠折扣</span>
-            <span>-￥{{subdata.sumdiscount}}</span>
+            <span>-￥{{sumdiscount}}</span>
           </div>
           <div class="sum-item">
             <span>应付金额</span>
-            <span>￥{{ subdata.sumpaid}}</span>
+            <span>￥{{ sumpaid }}</span>
           </div>
         </div>
       </div>
-      <div class="submit-bar">
-        <div class="order-price">
-          <span>￥</span>
-          <span>18</span>
-        </div>
-        <label class="button">
-          <button
-           formType="submit"
-           hidden="true"
-          ></button>
-          <span>去支付</span>
-        </label>
-      </div>
     </scroll-view>
+    <div class="submit-bar">
+      <div class="order-price">
+        <span>￥</span>
+        <span>{{sumpaid}}</span>
+      </div>
+      <label class="button">
+        <button
+         formType="submit"
+         hidden="true"
+        ></button>
+        <span>去支付</span>
+      </label>
+    </div>
   </form>
 </template>
 <script>
@@ -161,6 +169,7 @@ export default {
   },
   data() {
     return {
+      cartCount: 0,
       cartFoods: [],
       orderMode: 'takeoutex',
       radioList: [{
@@ -179,19 +188,17 @@ export default {
         name: '微信支付',
         value: 'wxpay'
       }],
+      sumdiscount: 0,
       subdata: {
         selectedTime: '12:24',
-        phoneNumber: 13555565525,
-        sumbill: 0,
-        sumdiscount: 0,
-        sumpaid: 0
+        phoneNumber: 13555565525
       }
     }
   },
   mounted() {
     this.subdata.selectedTime = this.getNowTime()
-    //  this.cartFoods = this.globalData.gcartFoods
-    //  console.log(this.cartFoods)
+    this.cartFoods = this.globalData.gcartFoods
+    this.cartCount = this.globalData.gcartCount
   },
   methods: {
     getNowTime() {
@@ -206,7 +213,34 @@ export default {
       this.subdata.selectedTime = e.mp.detail.value
     },
     handleSubmit(e) {
-      console.log(e.mp.detail.value)
+      let formData = e.mp.detail.value
+      let obj = {
+        foods: this.cartFoods,
+        sumbill: this.sumbill,
+        sumdiscount: this.sumdiscount,
+        sumpaid: this.sumpaid
+      }
+      let data = Object.assign(formData, obj)
+      console.log(data)
+    },
+    handleMenuBack() {
+      wx.navigateBack({
+        delta: 1
+      })
+    }
+  },
+  computed: {
+    sumbill() {
+      let num = 0
+      this.cartFoods.forEach((food) => {
+        if (food.count) {
+          num += food.price * food.count
+        }
+      })
+      return num
+    },
+    sumpaid() {
+      return this.sumbill - this.sumdiscount
     }
   }
 }
@@ -227,6 +261,7 @@ $theblue: #3d5d98;
 
 .box-title {
   font-weight: 600;
+  font-size: 30rpx;
 }
 
 .graytext {
@@ -239,7 +274,6 @@ $theblue: #3d5d98;
   left: 0;
   right: 0;
   bottom: 100rpx;
-  overflow: hidden;
   background: #f7f7f7;
 }
 
@@ -345,7 +379,6 @@ $theblue: #3d5d98;
   .cart-foods {
     margin-top: 20rpx;
     font-size: 35rpx;
-
     .foods-item {
       display: flex;
       justify-content: space-between;
@@ -353,6 +386,17 @@ $theblue: #3d5d98;
       height: 175rpx;
       line-height: 175rpx;
       border-bottom: 1px solid #c0c0c0;
+
+      .foods-content {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          width: 130rpx;
+          height: 130rpx;
+          margin-right: 20rpx;
+        }
+      }
     }
 
     .foods-box {

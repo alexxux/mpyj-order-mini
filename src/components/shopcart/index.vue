@@ -67,6 +67,7 @@ export default {
       this.cartData.forEach((item) => {
         num += item.count
       })
+      this.globalData.gcartCount = num
       return num
     }
   },
