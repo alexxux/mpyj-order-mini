@@ -80,6 +80,7 @@ export default {
           }
         })
       })
+      this.globalData.gcartFoods = foods
       return foods
     }
   },
