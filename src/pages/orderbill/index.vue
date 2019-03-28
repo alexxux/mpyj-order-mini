@@ -1,5 +1,5 @@
 <template>
-  <form class="order-bill">
+  <form class="order-bill" @submit="handleSubmit">
     <div class="shop">
       <div class="shop-name">
         <span>蛇口店</span>
@@ -12,16 +12,37 @@
         v-for="radio in radioList"
         :key="radio.value"
       >
-        <div class="radio-item" :class="{'radio-active': radio.checked}">
+        <div
+          class="radio-item"
+          :class="{'radio-active': radio.checked}"
+        >
           <radio
             :value="radio.value"
             :checked="radio.checked"
+            name="orderMode"
           ></radio>
           <i class="iconfont" :class="{'icon-baozhuang': radio.value==='takeoutex', 'icon-waimaixinxi': radio.value ==='takeout'}"></i>
           {{radio.name}}
         </div>
       </label>
     </radio-group>
+    <div class="message-box">
+      <picker
+        @change="pickerChange"
+        mode="time"
+        :value="selectedTime"
+      >
+      <span>预计送达时间</span>
+        <view class="picker">
+          {{selectedTime}}
+        </view>
+      </picker>
+      <div class="phoneBox">
+        <span>预留电话</span>
+        <span></span>
+      </div>
+    </div>
+    <button formType="submit">提交</button>
   </form>
 </template>
 <script>
@@ -35,12 +56,25 @@ export default {
       }, {
         name: '外卖配送',
         value: 'takeout'
-      }]
+      }],
+      selectedTime: '12:22'
     }
   },
+  mounted() {
+    this.selectedTime = this.getNowTime()
+  },
   methods: {
+    getNowTime() {
+      return new Date().getHours().toString() + ':' + new Date().getMinutes().toString()
+    },
     radioChange(e) {
       console.log(e.target.value)
+    },
+    pickerChange(e) {
+      this.selectedTime = e.mp.detail.value
+    },
+    handleSubmit(e) {
+      console.log(e)
     }
   }
 }
