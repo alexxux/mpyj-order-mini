@@ -1,11 +1,13 @@
 {
   "pages": [
+    "pages/orderbill/main",
     "pages/shop/main",
     "pages/home/main",
     "pages/user/main",
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main"
+    
   ],
   "window":
   {

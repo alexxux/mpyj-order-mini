@@ -1,17 +1,17 @@
 <template>
   <div class="shop-menu">
     <scroll-view
-     scroll-y
-     class="menu-class"
+      scroll-y
+      class="menu-class"
     >
       <!-- 侧边栏 -->
       <ul class="menu-class-box">
         <li
-         v-for="(c,index) in menuData"
-         :key="index"
-         @click="selectClass(index)"
-         :class="{'class-selected': index === selectMenu}"
-         class="class-item"
+          v-for="(c,index) in menuData"
+          :key="index"
+          @click="selectClass(index)"
+          :class="{'class-selected': index === selectMenu}"
+          class="class-item"
         >
           <div class="icon-box">
             <i class="svg-icon" :class="{'shop-class-hot': c.name==='热销商品', 'shop-class-dumpling': c.name==='饺子类' || c.name==='云吞类' || c.name==='包点类'}"></i>
@@ -23,14 +23,14 @@
     </scroll-view>
     <!-- 菜单界面 -->
     <scroll-view
-     scroll-y
-     class="menu-list"
+      scroll-y
+      class="menu-list"
     >
       <ul class="menu-list-box">
         <li
-         v-for="(item, index) in menuData[selectMenu].foods"
-         :key="index"
-         class="menu-item"
+          v-for="(item, index) in menuData[selectMenu].foods"
+          :key="index"
+          class="menu-item"
         >
           <div class="item-icon-box">
             <img :src="item.icon" class="item-icon">
@@ -41,18 +41,25 @@
                 <div class="description">{{item.description}}</div>
               </div>
               <div class="price-box">
-                <span>￥</span><span class="price">{{item.price}}</span></div>
+                <span>￥</span><span class="price">
+                  <format-price :num="item.price"></format-price>
+                </span></div>
               <cartcontrol :food="item"></cartcontrol>
             </div>
         </li>
       </ul>
     </scroll-view>
-    <shop-cart :cartData="cartFoods" @clearcart="handleClearCart"></shop-cart>
+    <shop-cart
+      :cartData="cartFoods"
+      @clearcart="handleClearCart"
+      @sumbitcart="handleSumbitCart"
+    ></shop-cart>
   </div>
 </template>
 <script>
 import cartcontrol from 'components/cartcontrol'
 import shopCart from 'components/shopcart'
+import formatPrice from '@/utils/format-price'
 import Vue from 'vue'
 export default {
   props: {
@@ -78,7 +85,8 @@ export default {
   },
   components: {
     cartcontrol,
-    shopCart
+    shopCart,
+    formatPrice
   },
   methods: {
     selectClass(index) {
@@ -95,14 +103,18 @@ export default {
           }
         })
       })
+    },
+    handleSumbitCart() {
+      const url = '../orderbill/main'
+      mpvue.navigateTo({ url })
     }
   }
 }
 
 </script>
 <style
- lang="scss"
- scoped
+  lang="scss"
+  scoped
 >
 @import '~common/style/svg.scss';
 
@@ -167,7 +179,8 @@ export default {
 
 .menu-list {
   .menu-list-box {
-    padding-bottom:10px;
+    padding-bottom: 10px;
+
     .menu-item {
       box-sizing: border-box;
       width: 560rpx;
@@ -190,6 +203,7 @@ export default {
           max-height: 100%;
         }
       }
+
       .item-content {
         display: flex;
         flex-direction: column;
@@ -218,6 +232,8 @@ export default {
           color: #db5144;
           position: absolute;
           bottom: 100rpx;
+          display: flex;
+          align-items: flex-end;
 
           .price {
             font-size: 25px;

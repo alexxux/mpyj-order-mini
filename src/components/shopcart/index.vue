@@ -11,7 +11,7 @@
         <i class="cart-count" v-show="cartCount">{{cartCount}}</i>
       </div>
       <div class="submit-button">
-        <span class="text">去结算</span>
+        <span class="text" @click="handleCartSumbit">去结算</span>
       </div>
     </div>
     <!-- 购物车列表遮罩 -->
@@ -80,6 +80,9 @@ export default {
     handleClear() {
       this.$emit('clearcart')
       this.handleCartList()
+    },
+    handleCartSumbit() {
+      this.$emit('sumbitcart')
     }
   }
 }
