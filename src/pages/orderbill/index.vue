@@ -80,7 +80,7 @@
               <img :src="food.icon" class="icon">
               <span class="text">{{food.name}} x {{ food.count }}</span>
             </div>
-            <span>￥{{ food.price * food.count }}</span>
+            <span>￥{{ food.total }}</span>
           </li>
         </ul>
         <div

@@ -183,6 +183,7 @@ export default {
       this.menuData.forEach((list) => {
         list.foods.forEach((item) => {
           if (item.count) {
+            Vue.set(item, 'total', (item.count * item.price).toFixed(2))
             foods.push(item)
           }
         })
