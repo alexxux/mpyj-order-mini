@@ -80,7 +80,7 @@
               <img :src="food.icon" class="icon">
               <span class="text">{{food.name}} x {{ food.count }}</span>
             </div>
-            <span>￥{{ food.price * food.count}}</span>
+            <span>￥{{ food.price * food.count }}</span>
           </li>
         </ul>
         <div
@@ -237,7 +237,7 @@ export default {
           num += food.price * food.count
         }
       })
-      return num
+      return num.toFixed(2)
     },
     sumpaid() {
       return this.sumbill - this.sumdiscount
