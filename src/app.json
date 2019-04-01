@@ -3,11 +3,7 @@
     "pages/shop/main",
     "pages/orderbill/main",
     "pages/home/main",
-    "pages/user/main",
-    "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
-    
+    "pages/user/main"
   ],
   "window":
   {
